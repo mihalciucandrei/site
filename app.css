@@ -1,0 +1,108 @@
+body {
+    background-image: url('photo/Фон.png'); 
+    background-attachment: fixed; 
+    background-position: center; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+   
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+}
+
+.navbar ul li {
+    margin: 0 15px; 
+}
+
+.navbar a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s; 
+}
+    
+
+.navbar a:hover {
+    background-color: #555; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+  
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0 20px; 
+    color: #ffffff; 
+    font-size: 2em; 
+    font-weight: bold; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px; 
+    overflow: hidden; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.events-table th, .events-table td {
+    padding: 15px; 
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.events-table th {
+    background-color: #338b41; 
+    color: white; 
+    font-weight: bold; 
+}
+
+.events-table td {
+    color: #333; 
+    font-size: 1.1em; 
+    background-color: #ddd;
+}
+
+.events-table img {
+    width: 100px; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+.events-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.events-table tbody tr:hover {
+    background-color: #e0e0e0; 
+}
+
+.events-table tbody tr:hover td {
+    color: #007bff; 
+    font-weight: bold; 
+}
+footer{
+    position: relative;
+    
+}
