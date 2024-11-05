@@ -33,7 +33,7 @@ body {
     color: white;
     text-decoration: none;
     padding: 12px 20px;
-    font-size: 18px;
+    font-size: 18px; 
     border-radius: 5px;
     transition: all 0.3s ease;
 }
@@ -48,56 +48,55 @@ body {
     outline: none;
     box-shadow: 0 0 0 2px #0066cc; 
 }
-
-
-main {
-    padding: 80px 20px; 
+.section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    font-size: 36px;               
-    color: #fff;                    
-    background-color: #484848;
-    background-color:;      
-    padding: 15px 30px;             
-    border: 3px solid #e74c3c;     
-    border-radius: 8px;             
-    text-transform: uppercase;      
-    text-align: center; 
-    margin-top: 200px;
-    margin-bottom: 5px;   
-    
+    font-size: 28px;
+    color: #2980b9;
+    margin-bottom: 10px;
+    margin-top: 60px;
 }
 
-.news-item {
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.news-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+table, th, td {
+    border: 1px solid #ddd;
 }
 
-.news-item h3 {
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.match-report {
+    margin-bottom: 20px;
+}
+
+.match-report h3 {
     font-size: 24px;
-    color: #0066cc;
-    margin-bottom: 15px;
-    font-weight: 500;
+    color: #e74c3c;
 }
-
-.news-item p {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
-}
-
-
-
 .footer {
     margin: 50px 0 0 0;
     top: 0;

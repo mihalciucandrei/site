@@ -48,56 +48,56 @@ body {
     outline: none;
     box-shadow: 0 0 0 2px #0066cc; 
 }
-
-
-main {
-    padding: 80px 20px; 
-}
-
-h2 {
-    font-size: 36px;               
-    color: #fff;                    
-    background-color: #484848;
-    background-color:;      
-    padding: 15px 30px;             
-    border: 3px solid #e74c3c;     
-    border-radius: 8px;             
-    text-transform: uppercase;      
-    text-align: center; 
-    margin-top: 200px;
-    margin-bottom: 5px;   
-    
-}
-
-.news-item {
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    padding: 25px;
+.match-reports {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 100px;
 }
 
-.news-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+.match-report {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.news-item h3 {
+.match-report h3 {
+    color: #333;
     font-size: 24px;
-    color: #0066cc;
-    margin-bottom: 15px;
-    font-weight: 500;
 }
 
-.news-item p {
+.match-date-time,
+.match-teams {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.match-summary h4 {
     font-size: 18px;
-    color: #666;
+    color: #333;
+    margin-top: 15px;
+}
+
+.match-summary p {
+    font-size: 16px;
     line-height: 1.6;
+    margin-top: 10px;
 }
 
 
+.match-photo {
+    margin-top: 20px;
+    text-align: center;
+}
 
+.match-photo img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
 .footer {
     margin: 50px 0 0 0;
     top: 0;
