@@ -128,7 +128,7 @@ h2 {
     height: 200px;
 }
 
-.social-icon,
+
 .menu {
     display: flex;
     justify-content: center;
@@ -137,22 +137,11 @@ h2 {
     flex-wrap: wrap;
 }
 
-.social-icon__item,
+
 .menu__item {
     list-style: none;
     display: flex;
     margin: 0 15px;
-}
-
-.social-icon__link {
-    font-size: 2rem;
-    color: #fff;
-    display: inline-block;
-    transition: 0.5s;
-}
-
-.social-icon__link:hover {
-    transform: translateY(-10px);
 }
 
 .menu__link {
