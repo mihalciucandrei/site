@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('photo/Фон.jpeg') no-repeat;
+    background-size: cover; 
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    padding: 30px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0066cc; 
+}
+.match-reports {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.match-report {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.match-report h3 {
+    color: #333;
+    font-size: 24px;
+}
+
+.match-date-time,
+.match-teams {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.match-summary h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.match-summary p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+
+.match-photo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.match-photo img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+.footer {
+    margin: 50px 0 0 0;
+    top: 0;
+    left: 0;
+    background:  #000000;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.social-icon,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+    display: flex;
+    margin: 0 15px;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+}

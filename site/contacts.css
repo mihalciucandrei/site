@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('photo/Фон.jpeg') no-repeat;
+    background-size: cover; 
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    position: fixed;
+    padding: 30px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0066cc; 
+}
+

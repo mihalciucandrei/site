@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('photo/Фон.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+}
+
+main {
+    margin-top: 100px; 
+    padding: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+    font-size: 24px;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 18px;
+}
+
+.footer {
+    margin: 50px 0 0 0;
+    top: 0;
+    left: 0;
+    background:  #000000;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.social-icon,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+
+.menu__item {
+    list-style: none;
+    display: flex;
+    margin: 0 15px;
+}
+
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+}
