@@ -1,152 +1,165 @@
-*{
+
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-}
-body {
-    background: url('photo/Фон.jpeg') no-repeat;
-    background-size: cover; 
-    top: 0;
-    left: 0;
-    margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: #f0f4f8;
+    color: #333;
+    scroll-behavior: smooth;
 }
 
+h2, h3 {
+    color: #222;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .navbar {
-    position: fixed;
-    padding: 30px 0;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #000000;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px; 
+    margin: 0;
+    padding: 0;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    font-size: 18px; 
-    border-radius: 5px;
-    transition: all 0.3s ease;
+.navbar ul li {
+    margin: 0 15px;
 }
 
-.navbar a:hover {
-    background-color: #555;
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.navbar ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
 }
 
-.navbar a:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #0066cc; 
+.navbar ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
 }
+
+
 .section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-h2 {
-    font-size: 28px;
-    color: #2980b9;
-    margin-bottom: 10px;
-    margin-top: 60px;
+.section:hover {
+    transform: translateY(-10px);
 }
 
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
 
-table, th, td {
+table th, table td {
+    padding: 1rem;
+    text-align: center;
     border: 1px solid #ddd;
 }
 
-th, td {
-    padding: 10px;
-    text-align: center;
+table th {
+    background-color: #1a73e8;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
-th {
-    background-color: #2980b9;
-    color: white;
-}
-
-tr:nth-child(even) {
+table tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1faff;
 }
 
 
 .match-report {
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #1a73e8, #4caf50);
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.match-report:hover {
+    transform: scale(1.02);
 }
 
 .match-report h3 {
-    font-size: 24px;
-    color: #e74c3c;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    flex: 1;
 }
+
+.match-report p {
+    margin: 0.5rem 1rem;
+}
+
+.match-report img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 10px 0 0 10px;
+}
+
+
 .footer {
-    margin: 50px 0 0 0;
-    top: 0;
-    left: 0;
-    background:  #000000;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+    background-color:#1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
 }
 
-.social-icon,
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
-}
-
-
-.menu__item {
+.footer ul {
     list-style: none;
+    padding: 0;
+    margin: 1rem 0;
     display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
     margin: 0 15px;
 }
 
-
-.menu__link {
-    font-size: 1.2rem;
+.footer ul li a {
     color: #fff;
-    display: inline-block;
-    transition: 0.5s;
-    text-decoration: none;
-    opacity: 0.75;
-    font-weight: 300;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.menu__link:hover {
-    opacity: 1;
+.footer ul li a:hover {
+    color: #ffcc00;
 }
 
-.footer p {
-    color: #fff;
-    margin: 15px 0 10px 0;
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
-    padding: 10px 0;
-}

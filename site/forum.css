@@ -4,50 +4,45 @@
     padding: 0;
 }
 body {
-    background: url('photo/Фон.jpeg') no-repeat;
-    background-size: cover; 
-    top: 0;
-    left: 0;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f4f8;
+    color: #333;
+    scroll-behavior: smooth;
 }
 .navbar {
-    position: fixed;
-    padding: 30px 0;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #000000;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px; 
+    margin: 0;
+    padding: 0;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+.navbar ul li {
+    margin: 0 15px;
 }
 
-.navbar a:hover {
-    background-color: #555;
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.navbar ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
 }
 
-.navbar a:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #0066cc; 
+.navbar ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
 }
 .container {
     max-width: 1200px;
@@ -56,47 +51,31 @@ body {
     flex: 1 1 auto;
 }
 .footer {
-    margin: 50px 0 0 0;
-    top: 0;
-    left: 0;
-    background:  #000000;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+    background-color:#1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
 }
 
-
-.menu__item {
+.footer ul {
     list-style: none;
+    padding: 0;
+    margin: 1rem 0;
     display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
     margin: 0 15px;
 }
 
-
-
-.menu__link {
-    font-size: 1.2rem;
+.footer ul li a {
     color: #fff;
-    display: inline-block;
-    transition: 0.5s;
-    text-decoration: none;
-    opacity: 0.75;
-    font-weight: 300;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.menu__link:hover {
-    opacity: 1;
+.footer ul li a:hover {
+    color: #ffcc00;
 }
-
-.footer p {
-    color: #fff;
-    margin: 15px 0 10px 0;
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
-    padding: 10px 0;
-}
-
