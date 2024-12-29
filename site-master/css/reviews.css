@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f4f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+h2 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #444;
+    font-size: 2.5rem;
+}
+
+
+.match-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.match-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 400px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.match-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    color: #1a73e8;
+    font-size: 1.8rem;
+}
+
+.card-content p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.footer {
+    background-color:#1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 15px;
+}
+
+.footer ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #ffcc00;
+}
