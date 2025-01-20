@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мяч в игре</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        h2 {
+            font-size: 2rem;
+            background-color: #1a73e8;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            background-color: #1a73e8;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .footer a:hover {
+            color: #ffcc00;
+        }
+
+        .navbar-nav {
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-link {
+            text-align: center;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+    
+</head>
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand" href="firstpag.html">Мяч в игре</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="firstpag.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="secondpag.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="thirdpag.html">Статистика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fourthpag.html">Обзоры матчей</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fifthpag.html">Форум</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sixthpag.html">Контакты</a></li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <main class="container py-5">
+     
+        <section id="transfers" class="mb-5">
+            <h2 class="text-center mb-4">Трансферы</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="photo/новость 1.jpg" alt="Джуд Беллингем" class="card-img-top news-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Джуд Беллингем переходит в Манчестер Сити</h5>
+                            <p class="text-muted"><strong>Дата:</strong> 25 Октября 2024</p>
+                            <p>Манчестер Сити завершил трансфер Джуда Беллингема за 110 миллионов евро.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="photo/новость 2.jpg" alt="Никлас Сёльт" class="card-img-top news-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Никлас Сёльт подписал контракт с Челси</h5>
+                            <p class="text-muted"><strong>Дата:</strong> 24 Октября 2024</p>
+                            <p>Челси объявил о подписании защитника Никласа Сёльта.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="photo/новость 3.jpg" alt="Марио Баллотели" class="card-img-top news-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Марио Баллотели переходит в Дженоа</h5>
+                            <p class="text-muted"><strong>Дата:</strong> 29 Октября 2024</p>
+                            <p>Марио Баллотели переходит в «Дженоа» в качестве свободного агента.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="injuries" class="mb-5">
+            <h2 class="text-center mb-4">Травмы</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="photo/новость 4.jpg" alt="Харри Магуайр" class="card-img-top news-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Харри Магуайр выбыл на 4 недели</h5>
+                            <p class="text-muted"><strong>Дата:</strong> 21 Октября 2024</p>
+                            <p>Травма бедра лишит Харри Магуайра игр на месяц.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="photo/новость 5.jpg" alt="Мохамед Салах" class="card-img-top news-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Мохамед Салах пропустит ближайшие матчи</h5>
+                            <p class="text-muted"><strong>Дата:</strong> 22 Октября 2024</p>
+                            <p>Травма оставляет Салаха вне игры на две недели.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="photo/новость 6.jpg" alt="Эдер Милитао" class="card-img-top news-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Эдер Милитао перенёс операцию</h5>
+                            <p class="text-muted"><strong>Дата:</strong> 20 Октября 2024</p>
+                            <p>Защитник Реала проходит реабилитацию после операции.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="interview">
+            <h2 class="text-center mb-4">Интервью</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="photo/новость 7.jpg" alt="Юрген Клопп" class="card-img-top news-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Интервью с Юргеном Клоппом</h5>
+                            <p class="text-muted"><strong>Дата:</strong> 20 Октября 2024</p>
+                            <p>Клопп поделился мыслями о Ливерпуле.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="photo/новость 8.jpg" alt="Кевин Де Брюйне" class="card-img-top news-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Кевин Де Брюйне о Лиге Чемпионов</h5>
+                            <p class="text-muted"><strong>Дата:</strong> 19 Октября 2024</p>
+                            <p>Кевин обсудил свои амбиции в Лиге Чемпионов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="photo/новость 9.jpg" alt="Джек Грилиш" class="card-img-top news-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Грилиш: ключ к успеху Англии</h5>
+                            <p class="text-muted"><strong>Дата:</strong> 16 июля 2024</p>
+                            <p>Эксперт о важности Джека Грилиша в сборной.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">About</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Services</a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/andreimihalciuc2/profilecard/" class="text-white text-decoration-none">Instagram</a></li>
+            </ul>
+            <p class="mb-0">&copy; 2024 | Все права защищены</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

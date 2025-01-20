@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мяч в игре</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        h2 {
+            font-size: 2rem;
+            background-color: #1a73e8;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.774);
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            background-color: #1a73e8;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .footer a:hover {
+            color: #ffcc00;
+        }
+
+        .navbar-nav {
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-link {
+            text-align: center;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="firstpag.html">Мяч в игре</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="firstpag.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="secondpag.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="thirdpag.html">Статистика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fourthpag.html">Обзоры матчей</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fifthpag.html">Форум</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sixthpag.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-5">
+            <h2 class="text-center text-white mb-4" style="background-color: #1a73e8;">Форум</h2>
+            <p class="lead">Здесь вы можете обсуждать последние события и результаты матчей Премьер-Лиги.</p>
+
+            <div class="mb-4">
+                <h4>Добавить комментарий</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="commentInput" class="form-label">Ваш комментарий:</label>
+                        <textarea class="form-control" id="commentInput" rows="4" placeholder="Напишите ваш комментарий..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+
+            <div class="comments-section">
+                <h4>Комментарии</h4>
+
+                <div class="comment mb-3 p-3 border rounded">
+                    <strong class="d-block">Иван Петров</strong>
+                    <p>Отличный матч! Обе команды показали хороший уровень игры.</p>
+                </div>
+
+                <div class="comment mb-3 p-3 border rounded">
+                    <strong class="d-block">Анна Смирнова</strong>
+                    <p>Согласна, игра была интересной, но мне кажется, что вратарь ошибся в нескольких моментах.</p>
+                </div>
+
+                <div class="comment mb-3 p-3 border rounded">
+                    <strong class="d-block">Дмитрий Ковалев</strong>
+                    <p>Не согласен, по мне, вратарь сыграл на высшем уровне.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-4 mt-5">
+        <ul class="list-unstyled d-flex justify-content-center mb-3">
+            <li><a href="#" class="text-white mx-3">О сайте</a></li>
+            <li><a href="#" class="text-white mx-3">Услуги</a></li>
+            <li><a href="#" class="text-white mx-3">Instagram</a></li>
+        </ul>
+        <p class="mb-0">© 2024 | Все права защищены</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

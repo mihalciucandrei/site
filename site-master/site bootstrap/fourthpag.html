@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мяч в игре</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+ <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        h2 {
+            font-size: 2rem;
+            background-color: #1a73e8;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            background-color: #1a73e8;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .footer a:hover {
+            color: #ffcc00;
+        }
+
+        .navbar-nav {
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-link {
+            text-align: center;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand" href="firstpag.html">Мяч в игре</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="firstpag.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="secondpag.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="thirdpag.html">Статистика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fourthpag.html">Обзоры матчей</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fifthpag.html">Форум</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sixthpag.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">Обзор матчей Премьер-Лиги</h2>
+
+        <div class="row">
+        
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="photo/M-L.jpg" class="card-img-top" alt="Матч Манчестер Сити vs Ливерпуль">
+                    <div class="card-body">
+                        <h5 class="card-title">Манчестер Сити vs Ливерпуль</h5>
+                        <p><strong>Дата:</strong> 26 Октября 2024, 19:30</p>
+                        <p><strong>Счёт:</strong> 3-2</p>
+                        <p class="card-text">Манчестер Сити одержал победу благодаря яркой игре Эрлинга Холанда. Ливерпуль попытался сравнять счёт, но упустил шанс в последние минуты.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="photo/C-A.jpg" class="card-img-top" alt="Матч Челси vs Арсенал">
+                    <div class="card-body">
+                        <h5 class="card-title">Челси vs Арсенал</h5>
+                        <p><strong>Дата:</strong> 25 Октября 2024, 21:00</p>
+                        <p><strong>Счёт:</strong> 1-1</p>
+                        <p class="card-text">Обе команды показали сильную игру. Арсенал открыл счёт, но Челси сравнял во втором тайме. Матч завершился ничьей.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="photo/man-lester.jpg" class="card-img-top" alt="Матч Манчестер Юнайтед vs Лестер">
+                    <div class="card-body">
+                        <h5 class="card-title">Манчестер Юнайтед vs Лестер</h5>
+                        <p><strong>Дата:</strong> 10 Ноября 2024, 16:00</p>
+                        <p><strong>Счёт:</strong> 3-0</p>
+                        <p class="card-text">«МЮ» разгромил «Лестер» – 3:0. У Бруну гол и ассист, Гарначо забил в чужие, Кристиансен – в свои.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="photo/ch-ars.jpg" class="card-img-top" alt="Челси vs Арсенал">
+                    <div class="card-body">
+                        <h5 class="card-title">Челси vs Арсенал</h5>
+                        <p><strong>Дата:</strong> 10 ноября 2024, 18:30</p>
+                        <p><strong>Счёт:</strong> 1-1</p>
+                        <p class="card-text">Арсенал повел в счете на 31-й минуте после быстрого розыгрыша штрафного, Хаверц сумел покатить мимо вратаря после паса Санчеса. Однако, гол был отменен из-за офсайда.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="photo/real-osas.jpg" class="card-img-top" alt="Реал Мадрид vs Осасуна">
+                    <div class="card-body">
+                        <h5 class="card-title">Реал Мадрид vs Осасуна</h5>
+                        <p><strong>Дата:</strong> 9 ноября 2024, 15:00</p>
+                        <p><strong>Счёт:</strong> 4-0</p>
+                        <p class="card-text">Реал Мадрид - Осасуна</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="photo/mal-atl.jpg" class="card-img-top" alt="Мальорка vs Атлетико Мадрид">
+                    <div class="card-body">
+                        <h5 class="card-title">Мальорка vs Атлетико Мадрид</h5>
+                        <p><strong>Дата:</strong> 10 Октября 2024, 17:15</p>
+                        <p><strong>Счёт:</strong> 0-1</p>
+                        <p class="card-text">Гол Альвареса принес «Атлетико» победу в гостевом матче Ла Лиги с «Мальоркой».</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="bg-primary text-white text-center py-4">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-white" href="#">О нас</a></li>
+            <li class="list-inline-item"><a class="text-white" href="#">Услуги</a></li>
+            <li class="list-inline-item"><a class="text-white" href="https://www.instagram.com/andreimihalciuc2/profilecard/?igsh=MTBuMTE4em42aHQ1Yw==">Instagram</a></li>
+        </ul>
+        <p>&copy;2024 | Все права защищены</p>
+    </footer>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

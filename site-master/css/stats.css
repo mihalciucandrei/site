@@ -36,6 +36,7 @@ a {
     justify-content: center;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .navbar ul li {
@@ -99,6 +100,7 @@ table tr:hover {
 
 .match-report {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 2rem;
     background: linear-gradient(135deg, #1a73e8, #4caf50);
@@ -123,6 +125,7 @@ table tr:hover {
 
 .match-report p {
     margin: 0.5rem 1rem;
+    flex: 2;
 }
 
 .match-report img {
@@ -132,9 +135,9 @@ table tr:hover {
     border-radius: 10px 0 0 10px;
 }
 
-
+/* Футер */
 .footer {
-    background-color:#1a73e8;
+    background-color: #1a73e8;
     color: #fff;
     text-align: center;
     padding: 2rem 0;
@@ -147,6 +150,7 @@ table tr:hover {
     margin: 1rem 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer ul li {
@@ -163,3 +167,55 @@ table tr:hover {
     color: #ffcc00;
 }
 
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    table th, table td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .match-report {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .match-report img {
+        margin: 0 auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .match-report h3, .match-report p {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    table th, table td {
+        font-size: 0.8rem;
+    }
+
+    .match-report img {
+        max-width: 100px;
+    }
+}

@@ -1,12 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: 'Arial', sans-serif;
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f0f4f8;
     color: #333;
     scroll-behavior: smooth;
@@ -28,6 +28,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .navbar ul li {
@@ -44,6 +45,7 @@ body {
     color: #ffcc00;
     transform: scale(1.1);
 }
+
 h2 {
     text-align: center;
     margin: 2rem 0;
@@ -60,7 +62,6 @@ h2 {
     padding: 2rem;
 }
 
-
 .match-card {
     background: #fff;
     border-radius: 15px;
@@ -75,13 +76,11 @@ h2 {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-
 .card-image img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 
 .card-content {
     padding: 1.5rem;
@@ -99,8 +98,9 @@ h2 {
     color: #555;
 }
 
+
 .footer {
-    background-color:#1a73e8;
+    background-color: #1a73e8;
     color: #fff;
     text-align: center;
     padding: 2rem 0;
@@ -113,6 +113,7 @@ h2 {
     margin: 1rem 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer ul li {
@@ -127,4 +128,59 @@ h2 {
 
 .footer ul li a:hover {
     color: #ffcc00;
+}
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+
+    .match-container {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .match-card {
+        max-width: 300px;
+    }
+
+    .card-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .match-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer ul li {
+        margin: 5px 0;
+    }
 }
